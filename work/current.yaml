@@ -1,7 +1,11 @@
-schema_version: 0.1.0
-state: foundation_release_prepared
+schema_version: 0.2.0
+state: foundation_live
 release: 0.1.0
+foundation_commit: 8549dfca2ab92bff7d92326532a737ddf96edb82
+registered_prompts: 20
+current_focus: factory_validation_and_library_growth
 next:
-  - validate registry against prompt front matter
-  - publish first repository release
-  - run factory against an unrelated conversation
+  - run the prompt-mining factory against an unrelated conversation
+  - add Golden Record and artifact-delivery audit prompts
+  - create fixture-based prompt evaluation
+  - generate exact remote-tree release checksums
