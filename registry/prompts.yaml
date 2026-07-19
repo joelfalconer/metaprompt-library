@@ -1,338 +1,266 @@
-schema_version: 0.1.0
+schema_version: 0.2.0
 prompts:
-- path: factory/PROMPT-MINING-AND-LIBRARY-PUBLICATION-FACTORY.md
-  id: mp.factory.prompt-mining-publication
-  title: Prompt Mining and Library Publication Factory
-  domain: compounding_learning
-  type: factory
-  status: candidate
-  version: 0.1.0
-  summary: Mines chats and working files for reusable prompt systems, generalizes and tests them, places them in this repository,
-    updates registries, and publishes a verified commit.
-  tags:
-  - factory
-  - prompt-mining
-  - repository-publication
-  - chat-to-system
-  - compounding
-  source_lineage:
-  - chat-to-system reconstruction practice
-  - prompt evaluation and taxonomy review
-  canonical_effect: none_until_adopted
-- path: extensions/CHAT-TO-SYSTEM-PROMPT-HARVEST-MODULE.md
-  id: mp.extension.chat-to-system-prompt-harvest
-  title: Chat-to-System Prompt Harvest Module
-  domain: compounding_learning
-  type: router
-  status: candidate
-  version: 0.1.0
-  summary: An embeddable module that adds prompt harvesting and library placement to a broader chat-to-system workflow.
-  tags:
-  - extension
-  - chat-to-system
-  - prompt-harvest
-  source_lineage:
-  - chat-to-system practice
-  canonical_effect: none_until_adopted
-- path: prompts/context-continuity/CHAT-TO-SYSTEM-VALUE-EXTRACTION-AND-PLACEMENT.md
-  id: mp.context.chat-to-system
-  title: Chat-to-System Value Extraction and Placement
-  domain: context_continuity
-  type: crucible
-  status: candidate
-  version: 0.1.0
-  summary: Turns an ephemeral conversation into source-preserved, reconciled, owner-placed, resumable system value.
-  tags:
-  - chat-to-system
-  - extraction
-  - placement
-  - handoff
-  source_lineage:
-  - full-thread reconstruction
-  - source occurrence gates R1-R4
-  canonical_effect: none_until_adopted
-- path: prompts/context-continuity/FULL-THREAD-RECONSTRUCTION-AND-HARNESS-HANDOFF.md
-  id: mp.context.full-thread-reconstruction
-  title: Full-Thread Reconstruction and Harness Handoff
-  domain: context_continuity
-  type: prompt_suite
-  status: candidate
-  version: 0.1.0
-  summary: Reconstructs a long conversation and its artifacts into a complete navigable package for continuation in another
-    harness.
-  tags:
-  - reconstruction
-  - handoff
-  - source-custody
-  - long-context
-  source_lineage:
-  - full-thread ecosystem reconstruction prompt
-  canonical_effect: none_until_adopted
-- path: prompts/context-continuity/FORK-MERGE-AND-CONTINUATION-RECOVERY.md
-  id: mp.context.fork-recovery
-  title: Fork Merge and Continuation Recovery
-  domain: context_continuity
-  type: audit
-  status: candidate
-  version: 0.1.0
-  summary: Reconciles divergent chat or workflow forks after stale-state, timeout or accidental branching incidents.
-  tags:
-  - fork-recovery
-  - stale-state
-  - continuation
-  - merge
-  source_lineage:
-  - fork merge and continuation package
-  canonical_effect: none_until_adopted
-- path: prompts/context-continuity/HANDOFF-QUALITY-AND-RESUMPTION-REVIEW.md
-  id: mp.context.handoff-review
-  title: Handoff Quality and Resumption Review
-  domain: context_continuity
-  type: evaluator
-  status: candidate
-  version: 0.1.0
-  summary: Adversarially tests whether a handoff can safely resume work without archaeology, drift or authority leakage.
-  tags:
-  - handoff
-  - quality-gate
-  - resumption
-  - continuity
-  source_lineage:
-  - handoff review doctrine
-  canonical_effect: none_until_adopted
-- path: prompts/source-knowledge/SANDBOX-SOURCE-ESTATE-INVENTORY.md
-  id: mp.source.sandbox-estate
-  title: Sandbox and Working-Directory Source Estate Inventory
-  domain: source_knowledge
-  type: audit
-  status: candidate
-  version: 0.1.0
-  summary: Inventories a temporary filesystem without destructive reorganization and builds a source/representation graph.
-  tags:
-  - sandbox
-  - inventory
-  - custody
-  - deduplication
-  source_lineage:
-  - sandbox reconsolidation practice
-  canonical_effect: none_until_adopted
-- path: prompts/source-knowledge/SOURCE-AND-OCCURRENCE-FABRIC.md
-  id: mp.source.occurrence-fabric
-  title: Source and Occurrence Fabric
-  domain: source_knowledge
-  type: compiler
-  status: candidate
-  version: 0.1.0
-  summary: Creates stable evidence addresses for extracted occurrences across source snapshots and representations.
-  tags:
-  - occurrence-uid
-  - source-addressing
-  - coverage
-  - database
-  source_lineage:
-  - Gate R1 source and occurrence fabric
-  canonical_effect: none_until_adopted
-- path: prompts/source-knowledge/LINEAGE-CORRECTION-AND-SUPERSESSION-FABRIC.md
-  id: mp.source.lineage-fabric
-  title: Lineage, Correction, and Supersession Fabric
-  domain: source_knowledge
-  type: compiler
-  status: candidate
-  version: 0.1.0
-  summary: Builds evidence-bearing aliases, corrections, contradictions, revisions, artifact ancestry and request-delivery
-    relations above an immutable occurrence layer.
-  tags:
-  - lineage
-  - correction
-  - supersession
-  - artifact-ancestry
-  source_lineage:
-  - Gate R2 lineage fabric
-  canonical_effect: none_until_adopted
-- path: prompts/architecture-governance/FEDERATED-DOMAIN-TAXONOMY-AND-CAPABILITY-DISCOVERY-CRUCIBLE.md
-  id: mp.architecture.federated-taxonomy
-  title: Federated Domain Taxonomy and Capability-Discovery Crucible
-  domain: architecture_governance
-  type: crucible
-  status: candidate
-  version: 0.1.0
-  summary: Expands a telegraphic seed into a typed, owner-aware candidate taxonomy and capability-interest matrix without
-    inventing agents or canonizing vendors.
-  tags:
-  - taxonomy
-  - capability-discovery
-  - federation
-  - ontology
-  source_lineage:
-  - Foundry and LifeOps comparative evaluation
-  canonical_effect: none_until_adopted
-- path: prompts/architecture-governance/SYSTEM-ENTRY-PLACEMENT-AND-NEW-NODE-WARRANT.md
-  id: mp.architecture.entry-placement
-  title: System Entry, Placement, and New-Node Warrant
-  domain: architecture_governance
-  type: router
-  status: candidate
-  version: 0.1.0
-  summary: Decides whether incoming work extends an existing system, merges with a similar node, becomes donor material, or
-    warrants a new project.
-  tags:
-  - placement
-  - new-node-warrant
-  - anti-sprawl
-  - registry
-  source_lineage:
-  - Federation Entry and Placement doctrine
-  canonical_effect: none_until_adopted
-- path: prompts/architecture-governance/ADVERSARIAL-IDENTITY-LINEAGE-AND-OWNER-PLACEMENT-REVIEW.md
-  id: mp.architecture.adversarial-placement
-  title: Adversarial Identity, Lineage, and Owner Placement Review
-  domain: architecture_governance
-  type: audit
-  status: candidate
-  version: 0.1.0
-  summary: Challenges false merges, broad filename clusters, weak aliases and premature owner assignments before canonical
-    placement.
-  tags:
-  - adversarial-review
-  - identity
-  - owner-placement
-  - anti-sprawl
-  source_lineage:
-  - Gate R3 adversarial review
-  canonical_effect: none_until_adopted
-- path: prompts/instruction-runtime/SYSTEM-INSTRUCTION-ARCHITECTURE-RESEARCH-PROGRAMME.md
-  id: mp.instruction.architecture-research
-  title: System Instruction Architecture Research Programme
-  domain: instruction_runtime
-  type: research_programme
-  status: candidate
-  version: 0.1.0
-  summary: Investigates where instructions, personalization, memory, agent rules, skills, hooks and enforcement belong across
-    platforms and scopes.
-  tags:
-  - instructions
-  - personalization
-  - agents-md
-  - skills
-  - cross-harness
-  source_lineage:
-  - deep research instruction architecture programme
-  canonical_effect: none_until_adopted
-- path: prompts/instruction-runtime/GLOBAL-AGENT-INSTRUCTIONS-COMPILER-COMMISSION.md
-  id: mp.instruction.global-agent-compiler
-  title: Global Agent Instructions Compiler Commission
-  domain: instruction_runtime
-  type: commission
-  status: candidate
-  version: 0.1.0
-  summary: Designs a compact global agent-instruction projection from canonical atoms while preserving project-local precedence
-    and enforcement boundaries.
-  tags:
-  - agents-md
-  - instruction-compiler
-  - global-rules
-  - projection
-  source_lineage:
-  - runtime fabric global AGENTS commission
-  canonical_effect: none_until_adopted
-- path: prompts/instruction-runtime/MULTI-HARNESS-ADAPTER-PROGRAMME.md
-  id: mp.instruction.multi-harness-adapters
-  title: Multi-Harness Adapter Programme
-  domain: instruction_runtime
-  type: commission
-  status: candidate
-  version: 0.1.0
-  summary: Builds source-governed projections for multiple agent harnesses without making any harness canonical.
-  tags:
-  - harness-adapters
-  - configuration
-  - instruction-projection
-  - migration
-  source_lineage:
-  - runtime fabric OpenCode adapter programme
-  canonical_effect: none_until_adopted
-- path: prompts/instruction-runtime/DOTFILES-DESIRED-STATE-PROGRAMME.md
-  id: mp.instruction.dotfiles-programme
-  title: Dotfiles Desired-State Programme
-  domain: instruction_runtime
-  type: commission
-  status: candidate
-  version: 0.1.0
-  summary: Converts captured user configuration into reviewed, secret-safe, cross-platform desired state with templating,
-    validation and rollback.
-  tags:
-  - dotfiles
-  - desired-state
-  - secrets
-  - cross-platform
-  source_lineage:
-  - runtime fabric dotfiles programme
-  canonical_effect: none_until_adopted
-- path: prompts/research-evaluation/COMPARATIVE-INSTANCE-OUTPUT-EVALUATION.md
-  id: mp.evaluation.instance-comparison
-  title: Comparative Instance Output Evaluation
-  domain: research_evaluation
-  type: evaluator
-  status: candidate
-  version: 0.1.0
-  summary: Compares parallel AI-instance outputs fairly, identifies complementary strengths and derives improved architecture
-    and prompting practice.
-  tags:
-  - evaluation
-  - parallel-instances
-  - synthesis
-  - prompt-improvement
-  source_lineage:
-  - Foundry and LifeOps evaluation
-  canonical_effect: none_until_adopted
-- path: prompts/compounding-learning/GROUNDING-AND-COMPOUNDING-SELF-IMPROVEMENT-AUDIT.md
-  id: mp.compounding.grounding-audit
-  title: Grounding and Compounding Self-Improvement Audit
-  domain: compounding_learning
-  type: audit
-  status: candidate
-  version: 0.1.0
-  summary: Assesses whether a workflow converts grounded evidence into durable reusable improvement rather than merely producing
-    more files.
-  tags:
-  - grounding
-  - compounding
-  - self-improvement
-  - audit
-  source_lineage:
-  - grounding-and-compounding review
-  canonical_effect: none_until_adopted
-- path: prompts/programme-orchestration/CROSS-SYSTEM-PROGRAMME-DISPATCH.md
-  id: mp.orchestration.cross-system-dispatch
-  title: Cross-System Programme Dispatch
-  domain: programme_orchestration
-  type: router
-  status: candidate
-  version: 0.1.0
-  summary: Registers a candidate programme packet, reconciles owners and locks, sequences commissions, and identifies immediate
-    versus blocked work.
-  tags:
-  - dispatch
-  - multi-system
-  - work-orders
-  - placement
-  source_lineage:
-  - runtime fabric master dispatch
-  canonical_effect: none_until_adopted
-- path: prompts/programme-orchestration/SELECTIVE-OWNER-ACCEPTANCE-AND-CANONICAL-PROMOTION.md
-  id: mp.orchestration.selective-promotion
-  title: Selective Owner Acceptance and Canonical Promotion
-  domain: programme_orchestration
-  type: gate
-  status: candidate
-  version: 0.1.0
-  summary: Applies prepared placement packets one owner at a time through current-state checks, explicit approval, bounded
-    patches and receipts.
-  tags:
-  - owner-acceptance
-  - promotion
-  - work-order
-  - receipt
-  source_lineage:
-  - Gate R5 selective owner acceptance
-  canonical_effect: none_until_adopted
+  - id: mp.factory.prompt-mining-publication
+    path: factory/PROMPT-MINING-AND-LIBRARY-PUBLICATION-FACTORY.md
+    title: Prompt Mining and Library Publication Factory
+    domain: compounding_learning
+    type: factory
+    status: candidate
+    version: 0.1.0
+    summary: Mines chats and working files for reusable prompt systems, generalizes and tests them, updates registries, and publishes verified changes.
+    tags: [factory, prompt-mining, repository-publication, chat-to-system, compounding]
+    source_lineage: [chat-to-system reconstruction practice, prompt evaluation and taxonomy review]
+    canonical_effect: none_until_adopted
+  - id: mp.extension.chat-to-system-prompt-harvest
+    path: extensions/CHAT-TO-SYSTEM-PROMPT-HARVEST-MODULE.md
+    title: Chat-to-System Prompt Harvest Module
+    domain: compounding_learning
+    type: router
+    status: candidate
+    version: 0.1.0
+    summary: Adds prompt harvesting and library placement to a broader chat-to-system workflow.
+    tags: [extension, chat-to-system, prompt-harvest]
+    source_lineage: [chat-to-system practice]
+    canonical_effect: none_until_adopted
+  - id: mp.context.chat-to-system
+    path: prompts/context-continuity/CHAT-TO-SYSTEM-VALUE-EXTRACTION-AND-PLACEMENT.md
+    title: Chat-to-System Value Extraction and Placement
+    domain: context_continuity
+    type: crucible
+    status: candidate
+    version: 0.1.0
+    summary: Turns an ephemeral conversation into source-preserved, reconciled, owner-placed, resumable system value.
+    tags: [chat-to-system, extraction, placement, handoff]
+    source_lineage: [full-thread reconstruction, source occurrence gates R1-R4]
+    canonical_effect: none_until_adopted
+  - id: mp.context.full-thread-reconstruction
+    path: prompts/context-continuity/FULL-THREAD-RECONSTRUCTION-AND-HARNESS-HANDOFF.md
+    title: Full-Thread Reconstruction and Harness Handoff
+    domain: context_continuity
+    type: prompt_suite
+    status: candidate
+    version: 0.1.0
+    summary: Reconstructs a long conversation and artifacts into a complete navigable package for continuation.
+    tags: [reconstruction, handoff, source-custody, long-context]
+    source_lineage: [full-thread ecosystem reconstruction prompt]
+    canonical_effect: none_until_adopted
+  - id: mp.context.fork-recovery
+    path: prompts/context-continuity/FORK-MERGE-AND-CONTINUATION-RECOVERY.md
+    title: Fork Merge and Continuation Recovery
+    domain: context_continuity
+    type: audit
+    status: candidate
+    version: 0.1.0
+    summary: Reconciles divergent conversation or workflow forks after stale-state, timeout or accidental branching.
+    tags: [fork-recovery, stale-state, continuation, merge]
+    source_lineage: [fork merge and continuation package]
+    canonical_effect: none_until_adopted
+  - id: mp.context.handoff-review
+    path: prompts/context-continuity/HANDOFF-QUALITY-AND-RESUMPTION-REVIEW.md
+    title: Handoff Quality and Resumption Review
+    domain: context_continuity
+    type: evaluator
+    status: candidate
+    version: 0.1.0
+    summary: Tests whether a handoff can safely resume work without archaeology, drift or authority leakage.
+    tags: [handoff, quality-gate, resumption, continuity]
+    source_lineage: [handoff review doctrine]
+    canonical_effect: none_until_adopted
+  - id: mp.context.brownfield-formalisation
+    path: prompts/context-continuity/BROWNFIELD-CONVERSATION-AND-PROJECT-FORMALISATION.md
+    title: Brownfield Conversation and Project Formalisation
+    domain: context_continuity
+    type: crucible
+    status: candidate
+    version: 0.1.0
+    summary: Reconstructs valuable work that emerged before formal project structure and routes it into a durable operating system.
+    tags: [brownfield, conversation, project-archaeology, formalisation, migration]
+    source_lineage: [brownfield entry and chat-to-system practice]
+    canonical_effect: none_until_adopted
+  - id: mp.source.sandbox-estate
+    path: prompts/source-knowledge/SANDBOX-SOURCE-ESTATE-INVENTORY.md
+    title: Sandbox and Working-Directory Source Estate Inventory
+    domain: source_knowledge
+    type: audit
+    status: candidate
+    version: 0.1.0
+    summary: Inventories a temporary filesystem without destructive reorganisation and builds a source and representation graph.
+    tags: [sandbox, inventory, custody, deduplication]
+    source_lineage: [sandbox reconsolidation practice]
+    canonical_effect: none_until_adopted
+  - id: mp.source.occurrence-fabric
+    path: prompts/source-knowledge/SOURCE-AND-OCCURRENCE-FABRIC.md
+    title: Source and Occurrence Fabric
+    domain: source_knowledge
+    type: compiler
+    status: candidate
+    version: 0.1.0
+    summary: Creates stable evidence addresses for extracted occurrences across source snapshots and representations.
+    tags: [occurrence-uid, source-addressing, coverage, database]
+    source_lineage: [Gate R1 source and occurrence fabric]
+    canonical_effect: none_until_adopted
+  - id: mp.source.lineage-fabric
+    path: prompts/source-knowledge/LINEAGE-CORRECTION-AND-SUPERSESSION-FABRIC.md
+    title: Lineage, Correction, and Supersession Fabric
+    domain: source_knowledge
+    type: compiler
+    status: candidate
+    version: 0.1.0
+    summary: Builds evidence-bearing aliases, corrections, contradictions, revisions and artifact ancestry above immutable occurrences.
+    tags: [lineage, correction, supersession, artifact-ancestry]
+    source_lineage: [Gate R2 lineage fabric]
+    canonical_effect: none_until_adopted
+  - id: mp.architecture.federated-taxonomy
+    path: prompts/architecture-governance/FEDERATED-DOMAIN-TAXONOMY-AND-CAPABILITY-DISCOVERY-CRUCIBLE.md
+    title: Federated Domain Taxonomy and Capability-Discovery Crucible
+    domain: architecture_governance
+    type: crucible
+    status: candidate
+    version: 0.1.0
+    summary: Expands a seed into a typed owner-aware candidate taxonomy and capability matrix without inventing agents or canonising vendors.
+    tags: [taxonomy, capability-discovery, federation, ontology]
+    source_lineage: [Foundry and LifeOps comparative evaluation]
+    canonical_effect: none_until_adopted
+  - id: mp.architecture.entry-placement
+    path: prompts/architecture-governance/SYSTEM-ENTRY-PLACEMENT-AND-NEW-NODE-WARRANT.md
+    title: System Entry, Placement, and New-Node Warrant
+    domain: architecture_governance
+    type: router
+    status: candidate
+    version: 0.1.0
+    summary: Decides whether incoming work extends, merges, becomes donor material or warrants a new node.
+    tags: [placement, new-node-warrant, anti-sprawl, registry]
+    source_lineage: [Federation Entry and Placement doctrine]
+    canonical_effect: none_until_adopted
+  - id: mp.architecture.adversarial-placement
+    path: prompts/architecture-governance/ADVERSARIAL-IDENTITY-LINEAGE-AND-OWNER-PLACEMENT-REVIEW.md
+    title: Adversarial Identity, Lineage, and Owner Placement Review
+    domain: architecture_governance
+    type: audit
+    status: candidate
+    version: 0.1.0
+    summary: Challenges false merges, broad filename clusters, weak aliases and premature owner assignments.
+    tags: [adversarial-review, identity, owner-placement, anti-sprawl]
+    source_lineage: [Gate R3 adversarial review]
+    canonical_effect: none_until_adopted
+  - id: mp.architecture.project-deliverable-selection
+    path: prompts/architecture-governance/PROJECT-DELIVERABLE-ARCHITECTURE-AND-SELECTION.md
+    title: Project Deliverable Architecture and Selection
+    domain: architecture_governance
+    type: crucible
+    status: candidate
+    version: 0.1.0
+    summary: Selects the smallest coherent project-specific set of deliverables and sequences ownership, validation and maintenance.
+    tags: [deliverables, project-planning, documentation-architecture, selection, roadmap]
+    source_lineage: [repeated project deliverable planning prompts]
+    canonical_effect: none_until_adopted
+  - id: mp.architecture.deliverable-taxonomy
+    path: prompts/architecture-governance/UNIVERSAL-DELIVERABLE-TAXONOMY-GENERATOR.md
+    title: Universal Deliverable Taxonomy Generator
+    domain: architecture_governance
+    type: compiler
+    status: candidate
+    version: 0.1.0
+    summary: Builds a broad typed extensible option library of project deliverables without making every option mandatory.
+    tags: [deliverable-taxonomy, documentation, project-types, registry, ontology]
+    source_lineage: [project deliverable architecture practice]
+    canonical_effect: none_until_adopted
+  - id: mp.architecture.entity-type-library
+    path: prompts/architecture-governance/ENTITY-TYPE-LIBRARY-AND-REGISTRY-DESIGN.md
+    title: Entity-Type Library and Registry Design
+    domain: architecture_governance
+    type: crucible
+    status: candidate
+    version: 0.1.0
+    summary: Designs a candidate entity-type option library and the admission contract for authoritative registries.
+    tags: [entity-types, registry, ontology, taxonomy, schema, identity]
+    source_lineage: [entity registry and federated taxonomy architecture]
+    canonical_effect: none_until_adopted
+  - id: mp.instruction.architecture-research
+    path: prompts/instruction-runtime/SYSTEM-INSTRUCTION-ARCHITECTURE-RESEARCH-PROGRAMME.md
+    title: System Instruction Architecture Research Programme
+    domain: instruction_runtime
+    type: research_programme
+    status: candidate
+    version: 0.1.0
+    summary: Investigates where instructions, personalisation, memory, agent rules, skills, hooks and enforcement belong.
+    tags: [instructions, personalization, agents-md, skills, cross-harness]
+    source_lineage: [deep research instruction architecture programme]
+    canonical_effect: none_until_adopted
+  - id: mp.instruction.global-agent-compiler
+    path: prompts/instruction-runtime/GLOBAL-AGENT-INSTRUCTIONS-COMPILER-COMMISSION.md
+    title: Global Agent Instructions Compiler Commission
+    domain: instruction_runtime
+    type: commission
+    status: candidate
+    version: 0.1.0
+    summary: Designs a compact global instruction projection from canonical atoms while preserving local precedence and enforcement boundaries.
+    tags: [agents-md, instruction-compiler, global-rules, projection]
+    source_lineage: [runtime fabric global AGENTS commission]
+    canonical_effect: none_until_adopted
+  - id: mp.instruction.multi-harness-adapters
+    path: prompts/instruction-runtime/MULTI-HARNESS-ADAPTER-PROGRAMME.md
+    title: Multi-Harness Adapter Programme
+    domain: instruction_runtime
+    type: commission
+    status: candidate
+    version: 0.1.0
+    summary: Builds source-governed projections for multiple harnesses without making any harness canonical.
+    tags: [harness-adapters, configuration, instruction-projection, migration]
+    source_lineage: [runtime fabric OpenCode adapter programme]
+    canonical_effect: none_until_adopted
+  - id: mp.instruction.dotfiles-programme
+    path: prompts/instruction-runtime/DOTFILES-DESIRED-STATE-PROGRAMME.md
+    title: Dotfiles Desired-State Programme
+    domain: instruction_runtime
+    type: commission
+    status: candidate
+    version: 0.1.0
+    summary: Converts captured user configuration into reviewed, safe, cross-platform desired state with validation and rollback.
+    tags: [dotfiles, desired-state, secrets, cross-platform]
+    source_lineage: [runtime fabric dotfiles programme]
+    canonical_effect: none_until_adopted
+  - id: mp.evaluation.instance-comparison
+    path: prompts/research-evaluation/COMPARATIVE-INSTANCE-OUTPUT-EVALUATION.md
+    title: Comparative Instance Output Evaluation
+    domain: research_evaluation
+    type: evaluator
+    status: candidate
+    version: 0.1.0
+    summary: Compares parallel AI-instance outputs, identifies complementary strengths and derives improved architecture and prompting.
+    tags: [evaluation, parallel-instances, synthesis, prompt-improvement]
+    source_lineage: [Foundry and LifeOps evaluation]
+    canonical_effect: none_until_adopted
+  - id: mp.compounding.grounding-audit
+    path: prompts/compounding-learning/GROUNDING-AND-COMPOUNDING-SELF-IMPROVEMENT-AUDIT.md
+    title: Grounding and Compounding Self-Improvement Audit
+    domain: compounding_learning
+    type: audit
+    status: candidate
+    version: 0.1.0
+    summary: Assesses whether a workflow converts evidence into durable reusable improvement rather than merely producing files.
+    tags: [grounding, compounding, self-improvement, audit]
+    source_lineage: [grounding-and-compounding review]
+    canonical_effect: none_until_adopted
+  - id: mp.orchestration.cross-system-dispatch
+    path: prompts/programme-orchestration/CROSS-SYSTEM-PROGRAMME-DISPATCH.md
+    title: Cross-System Programme Dispatch
+    domain: programme_orchestration
+    type: router
+    status: candidate
+    version: 0.1.0
+    summary: Registers a candidate programme, reconciles owners and locks, sequences commissions and identifies blocked work.
+    tags: [dispatch, multi-system, work-orders, placement]
+    source_lineage: [runtime fabric master dispatch]
+    canonical_effect: none_until_adopted
+  - id: mp.orchestration.selective-promotion
+    path: prompts/programme-orchestration/SELECTIVE-OWNER-ACCEPTANCE-AND-CANONICAL-PROMOTION.md
+    title: Selective Owner Acceptance and Canonical Promotion
+    domain: programme_orchestration
+    type: gate
+    status: candidate
+    version: 0.1.0
+    summary: Applies prepared placement packets one owner at a time through current-state checks, approval, bounded patches and receipts.
+    tags: [owner-acceptance, promotion, work-order, receipt]
+    source_lineage: [Gate R5 selective owner acceptance]
+    canonical_effect: none_until_adopted
