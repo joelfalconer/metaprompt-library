@@ -1,0 +1,17 @@
+schema_version: 0.1.0
+candidates:
+  - id: candidate.golden-record-extraction
+    proposed_job: Extract exemplary outputs and build evaluation fixtures.
+    state: queued
+  - id: candidate.artifact-delivery-coverage
+    proposed_job: Audit request, attempt, delivery, acceptance and custody.
+    state: queued
+  - id: candidate.context-packet-compiler
+    proposed_job: Compile minimum sufficient context for a task or fresh instance.
+    state: queued
+  - id: candidate.repository-archaeology
+    proposed_job: Classify repositories and files as target, donor, archive, captured state or obsolete.
+    state: queued
+  - id: candidate.multi-surface-project-sync
+    proposed_job: Project canonical state into GitHub, Linear, Notion and Drive with drift receipts.
+    state: queued

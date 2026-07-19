@@ -1,0 +1,43 @@
+schema_version: 0.1.0
+primary_domains:
+  context_continuity:
+    label: Context and Continuity
+    subcategories: [chat_to_system, handoff, fork_recovery, context_packets, fresh_instance_boot]
+  source_knowledge:
+    label: Source and Knowledge
+    subcategories: [inventory_custody, extraction, occurrence_addressing, lineage, artifact_delivery]
+  architecture_governance:
+    label: Architecture and Governance
+    subcategories: [federated_taxonomy, system_entry, placement, owner_review, repository_archaeology]
+  instruction_runtime:
+    label: Instruction and Runtime Architecture
+    subcategories: [instruction_layers, global_agent_rules, harness_adapters, dotfiles, runtime_fabric]
+  research_evaluation:
+    label: Research and Evaluation
+    subcategories: [deep_research, comparative_evaluation, adversarial_review, evidence_synthesis]
+  compounding_learning:
+    label: Compounding and Learning
+    subcategories: [prompt_mining, golden_records, self_improvement, correction_persistence]
+  programme_orchestration:
+    label: Programme Orchestration
+    subcategories: [dispatch, work_order_sequence, selective_promotion, mirror_sync]
+prompt_types:
+  - prompt
+  - prompt_suite
+  - crucible
+  - commission
+  - audit
+  - factory
+  - compiler
+  - router
+  - gate
+  - evaluator
+  - research_programme
+facet_namespaces:
+  scope: [turn, chat, project, repository, programme, ecosystem]
+  source: [conversation, sandbox, repository, connector, library, web, mixed]
+  lifecycle: [intake, discovery, extraction, reconciliation, placement, implementation, verification, handoff]
+  consequence: [low, medium, high, restricted]
+  tool_mode: [none, read_only, proposal_only, bounded_write, multi_provider]
+  output: [report, registry, graph, prompt, suite, work_order, handoff, receipt, patch]
+  maturity: [experimental, candidate, reviewed, stable, deprecated]

@@ -1,0 +1,16 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+$id: https://example.invalid/metaprompt-library/prompt-record.schema.yaml
+type: object
+required: [id, title, domain, type, status, version, summary, tags, source_lineage, canonical_effect]
+properties:
+  id: {type: string, pattern: '^mp\\.'}
+  title: {type: string, minLength: 3}
+  domain: {type: string}
+  type: {type: string}
+  status: {enum: [experimental, candidate, reviewed, stable, deprecated]}
+  version: {type: string}
+  summary: {type: string}
+  tags: {type: array, items: {type: string}, uniqueItems: true}
+  source_lineage: {type: array, items: {type: string}}
+  canonical_effect: {type: string}
+additionalProperties: true

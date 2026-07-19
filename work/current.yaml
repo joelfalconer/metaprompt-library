@@ -1,0 +1,7 @@
+schema_version: 0.1.0
+state: foundation_release_prepared
+release: 0.1.0
+next:
+  - validate registry against prompt front matter
+  - publish first repository release
+  - run factory against an unrelated conversation
