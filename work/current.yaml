@@ -1,11 +1,17 @@
-schema_version: 0.2.0
-state: foundation_live
-release: 0.1.0
+schema_version: 0.3.0
+state: candidate_release_0_2_prepared
+release: 0.2.0
 foundation_commit: 8549dfca2ab92bff7d92326532a737ddf96edb82
-registered_prompts: 20
-current_focus: factory_validation_and_library_growth
+registered_prompts: 24
+current_focus: brownfield_formalisation_deliverable_architecture_and_evaluation
+completed_in_candidate_release:
+  - brownfield conversation and project formalisation
+  - project deliverable architecture and selection
+  - universal deliverable taxonomy generator
+  - entity-type library and registry design
 next:
-  - run the prompt-mining factory against an unrelated conversation
+  - validate registry paths and front matter
+  - test prompts against unrelated software creative vault brand marketing and migration cases
+  - reconcile deliverable runtime concepts with Weave Genesis WG-016 without mutating its active repository
   - add Golden Record and artifact-delivery audit prompts
-  - create fixture-based prompt evaluation
   - generate exact remote-tree release checksums
