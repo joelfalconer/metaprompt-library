@@ -1,11 +1,17 @@
-schema_version: 0.1.0
+schema_version: 0.2.0
 suites:
   - id: suite.chat-to-system-compounding
     title: Chat-to-System Compounding Suite
     sequence: [mp.source.sandbox-estate, mp.context.chat-to-system, mp.source.occurrence-fabric, mp.source.lineage-fabric, mp.architecture.adversarial-placement, mp.orchestration.selective-promotion, mp.context.handoff-review]
+  - id: suite.brownfield-project-formalisation
+    title: Brownfield Project Formalisation Suite
+    sequence: [mp.source.sandbox-estate, mp.context.brownfield-formalisation, mp.architecture.entry-placement, mp.architecture.project-deliverable-selection, mp.architecture.entity-type-library, mp.context.handoff-review]
+  - id: suite.project-deliverable-architecture
+    title: Project Deliverable Architecture Suite
+    sequence: [mp.architecture.deliverable-taxonomy, mp.architecture.project-deliverable-selection, mp.architecture.entity-type-library, mp.compounding.grounding-audit]
   - id: suite.federated-system-design
     title: Federated System Design Suite
-    sequence: [mp.architecture.entry-placement, mp.architecture.federated-taxonomy, mp.evaluation.instance-comparison, mp.compounding.grounding-audit]
+    sequence: [mp.architecture.entry-placement, mp.architecture.federated-taxonomy, mp.architecture.entity-type-library, mp.evaluation.instance-comparison, mp.compounding.grounding-audit]
   - id: suite.instruction-runtime
     title: Instruction and Runtime Architecture Suite
     sequence: [mp.instruction.architecture-research, mp.instruction.global-agent-compiler, mp.instruction.multi-harness-adapters, mp.instruction.dotfiles-programme, mp.orchestration.cross-system-dispatch]
