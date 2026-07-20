@@ -1,10 +1,10 @@
-schema_version: 0.3.0
+schema_version: 0.4.0
 release: 0.2.0-candidate
 repository: joelfalconer/metaprompt-library
 publication:
   foundation_commit: 8549dfca2ab92bff7d92326532a737ddf96edb82
-  status: candidate_extension_pending_merge_and_evaluation
-  registered_prompts: 24
+  status: candidate_extension_merged_evaluation_pending
+  registered_prompts: 25
   registry_index: registry/REGISTRY_INDEX.yaml
   registry_shards: [registry/prompts.yaml, registry/prompts-2026-07-20.yaml]
   taxonomy: registry/taxonomy.yaml
@@ -12,12 +12,13 @@ publication:
   factory: factory/PROMPT-MINING-AND-LIBRARY-PUBLICATION-FACTORY.md
 validation:
   foundation_registry_reread: PASS
-  extension_prompt_paths_written: 4
-  extension_registry_entries: 4
+  extension_prompt_paths_written: 5
+  extension_registry_entries: 5
+  concurrent_publication_reconciled: PASS
   independent_cross_project_evaluation: pending_MPL-EVAL-001
   exact_remote_tree_checksum_manifest: pending_generated_release_tooling
   foundation_local_release_zip_sha256: cc3d641a6bcd84e24bfe12eeae05ca5857087a7d26004f1dfbd4cc5e890d4a2f
 notes:
   - Registry shards are searched through REGISTRY_INDEX.yaml.
-  - Candidate extension prompts require unrelated-project evaluation before stable promotion.
+  - Candidate extension prompts require evaluation before stable promotion.
   - Git history is authoritative for published files.
