@@ -1,0 +1,20 @@
+schema_version: 0.1.0
+applies_to: registry/taxonomy.yaml
+status: authoritative_addendum_pending_controlled_consolidation
+additions:
+  primary_domains:
+    instruction_runtime:
+      subcategories: [skill_architecture, chat_to_skill]
+    compounding_learning:
+      subcategories: [reusable_capability_extraction]
+  facet_namespaces:
+    output: [skill_package]
+classification:
+  prompt_id: mp.instruction.chat-to-skill
+  primary_domain: instruction_runtime
+  secondary_domain: compounding_learning
+  type: factory
+  lifecycle: [intake, extraction, reconciliation, placement, implementation, verification, handoff]
+  outputs: [skill_package, registry, report, receipt, patch]
+consolidation_rule: Merge these values into the base taxonomy without removing existing concurrent extensions.
+canonical_effect: Taxonomy membership does not install, approve, or authorize a generated skill.
