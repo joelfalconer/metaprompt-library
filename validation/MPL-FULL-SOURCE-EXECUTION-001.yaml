@@ -1,0 +1,10 @@
+schema_version: 0.1.0
+validation_id: MPL-FULL-SOURCE-EXECUTION-001
+result: candidate_ready_for_independent_evaluation
+checks:
+  prompt_present: true
+  pending_registry_present: true
+  publication_receipt_present: true
+  private_context_removed: true
+  evaluation_work_item: MPL-EVAL-001
+canonical_effect: none_until_adopted
