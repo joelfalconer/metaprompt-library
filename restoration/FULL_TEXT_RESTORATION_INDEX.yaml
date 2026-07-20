@@ -1,0 +1,69 @@
+schema_version: 1.0.0
+source:
+  file: GPTBranchx3ConstellationOS.md
+  lines: 78806
+  prompt_blocks: 130
+  response_blocks: 130
+policy:
+  compact_variants: preserve
+  full_variants: candidate_pending_MPL_FULLTEXT_EVAL_001
+  exact_and_reconstructed_must_be_distinguished: true
+foundation:
+  - id: mp.context.full-thread-reconstruction
+    state: exact_full_prompt
+    source_lines: 44919-45834
+    compact_words: 214
+    restored_words: 2827
+  - id: mp.instruction.architecture-research
+    state: exact_full_prompt
+    source_lines: 39638-41188
+    compact_words: 238
+    restored_words: 4616
+  - id: mp.architecture.federated-taxonomy
+    state: exact_full_prompt
+    source_lines: response_249_meta_prompt
+    compact_words: 250
+    restored_words: 1324
+  - id: mp.factory.prompt-mining-publication
+    state: expanded_reconstruction
+  - id: mp.extension.chat-to-system-prompt-harvest
+    state: expanded_reconstruction
+  - id: mp.context.chat-to-system
+    state: expanded_reconstruction
+  - id: mp.context.fork-recovery
+    state: expanded_reconstruction
+  - id: mp.context.handoff-review
+    state: expanded_reconstruction
+  - id: mp.source.sandbox-estate
+    state: expanded_reconstruction
+  - id: mp.source.occurrence-fabric
+    state: expanded_reconstruction
+  - id: mp.source.lineage-fabric
+    state: expanded_reconstruction
+  - id: mp.architecture.adversarial-placement
+    state: expanded_reconstruction
+  - id: mp.architecture.entry-placement
+    state: expanded_reconstruction
+  - id: mp.compounding.grounding-audit
+    state: expanded_reconstruction
+  - id: mp.instruction.global-agent-compiler
+    state: expanded_reconstruction
+  - id: mp.instruction.multi-harness-adapters
+    state: expanded_reconstruction
+  - id: mp.instruction.dotfiles-programme
+    state: expanded_reconstruction
+  - id: mp.evaluation.instance-comparison
+    state: expanded_reconstruction
+  - id: mp.orchestration.cross-system-dispatch
+    state: expanded_reconstruction
+  - id: mp.orchestration.selective-promotion
+    state: expanded_reconstruction
+package:
+  library_path: /Constellation OS/Handoffs/2026/2026-07-20/Constellation_OS_Prompt_Restoration_Successor_Project_and_Expanded_Portfolio_v1.zip
+  contents:
+    - 20 restored full foundation candidates
+    - 20 compact originals
+    - exact source prompts and 130 user prompt blocks
+    - prompt source concordance and package recovery registry
+    - evaluation and publication plan
+canonical_effect: none_until_evaluated_and_merged
