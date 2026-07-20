@@ -1,0 +1,38 @@
+schema_version: 0.1.0
+work_order:
+  id: MPL-FULLTEXT-RESTORATION-001
+  title: Restore compressed metaprompts from full source prompts and packages
+  owner: repo.metaprompt-library
+  status: complete_awaiting_evaluation_and_split_publication
+  source:
+    export: GPTBranchx3ConstellationOS.md
+    lines: 78806
+    prompt_blocks: 130
+    historical_artifact_references: 299
+  outcomes:
+    - preserve current compact prompt cards
+    - recover exact source prompts where available
+    - produce expanded reconstructions where originals are unavailable
+    - record source ranges restoration method and package lineage
+    - create fixtures for full versus compact evaluation
+    - publish only context-agnostic privacy-safe candidates
+  release_package: /Constellation OS/Handoffs/2026/2026-07-20/Constellation_OS_Prompt_Restoration_Successor_Project_and_Expanded_Portfolio_v1.zip
+  current_release:
+    foundation_compact_variants: 20
+    foundation_restored_candidates: 20
+    exact_major_source_prompts: 9
+    exact_user_prompt_blocks: 130
+  dependencies:
+    - PROMPT-SOURCE-CONCORDANCE-001
+    - PROMPT-PACKAGE-RECOVERY-001
+    - MPL-FULLTEXT-EVAL-001
+  no_touch:
+    - do not overwrite compact variants before evaluation
+    - do not call reconstructed text verbatim source
+    - do not publish private or Constellation-specific payload as generic prompts
+  canonical_effect: none_until_evaluated_and_merged
+  exact_resumption:
+    - recover remaining package bytes from File Library and Git history
+    - split the reviewed full candidates into stable prompt paths
+    - run unrelated-domain full versus compact fixtures
+    - revise promote or reject each candidate
