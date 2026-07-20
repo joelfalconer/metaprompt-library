@@ -1,0 +1,15 @@
+schema_version: 0.1.0
+applies_to: MANIFEST.yaml
+status: authoritative_addendum_pending_manifest_consolidation
+registered_prompts: 25
+registry_index: registry/REGISTRY_INDEX.yaml
+registry_shards:
+  - {path: registry/prompts.yaml, prompt_count: 20}
+  - {path: registry/prompts-2026-07-20.yaml, prompt_count: 5}
+reconciliation:
+  concurrent_prompt: mp.instruction.chat-to-skill
+  registry_entry_added: true
+  index_count_updated: true
+  work_state_updated: true
+  independent_evaluation: pending_MPL-EVAL-001
+note: The base manifest still reports 24 until a later controlled consolidation; use this addendum and the registry index for current count.
