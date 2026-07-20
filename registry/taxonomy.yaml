@@ -1,26 +1,26 @@
-schema_version: 0.1.0
+schema_version: 0.2.0
 primary_domains:
   context_continuity:
     label: Context and Continuity
-    subcategories: [chat_to_system, handoff, fork_recovery, context_packets, fresh_instance_boot]
+    subcategories: [chat_to_system, handoff, fork_recovery, context_packets, fresh_instance_boot, brownfield_formalisation]
   source_knowledge:
     label: Source and Knowledge
     subcategories: [inventory_custody, extraction, occurrence_addressing, lineage, artifact_delivery]
   architecture_governance:
     label: Architecture and Governance
-    subcategories: [federated_taxonomy, system_entry, placement, owner_review, repository_archaeology]
+    subcategories: [federated_taxonomy, system_entry, placement, owner_review, repository_archaeology, deliverable_architecture, entity_library_registry_design]
   instruction_runtime:
     label: Instruction and Runtime Architecture
     subcategories: [instruction_layers, global_agent_rules, harness_adapters, dotfiles, runtime_fabric]
   research_evaluation:
     label: Research and Evaluation
-    subcategories: [deep_research, comparative_evaluation, adversarial_review, evidence_synthesis]
+    subcategories: [deep_research, comparative_evaluation, adversarial_review, evidence_synthesis, prompt_evaluation]
   compounding_learning:
     label: Compounding and Learning
     subcategories: [prompt_mining, golden_records, self_improvement, correction_persistence]
   programme_orchestration:
     label: Programme Orchestration
-    subcategories: [dispatch, work_order_sequence, selective_promotion, mirror_sync]
+    subcategories: [dispatch, work_order_sequence, selective_promotion, mirror_sync, portfolio_routing]
 prompt_types:
   - prompt
   - prompt_suite
@@ -39,5 +39,5 @@ facet_namespaces:
   lifecycle: [intake, discovery, extraction, reconciliation, placement, implementation, verification, handoff]
   consequence: [low, medium, high, restricted]
   tool_mode: [none, read_only, proposal_only, bounded_write, multi_provider]
-  output: [report, registry, graph, prompt, suite, work_order, handoff, receipt, patch]
+  output: [report, registry, graph, prompt, suite, work_order, handoff, receipt, patch, type_library, deliverable_architecture, context_pack]
   maturity: [experimental, candidate, reviewed, stable, deprecated]
