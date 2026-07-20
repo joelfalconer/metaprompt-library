@@ -7,5 +7,8 @@ registry_shards:
   - path: prompts-2026-07-20.yaml
     role: 2026_07_20_extension
     prompt_count: 5
+  - path: prompts-2026-07-20-launchers.yaml
+    role: 2026_07_20_work_item_launchers
+    prompt_count: 1
 lookup_rule: Search every listed shard by stable ID, title, path and tags before creating a new prompt.
 canonical_effect: Registry membership does not make a prompt authoritative in another system.
