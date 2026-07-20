@@ -1,11 +1,11 @@
-schema_version: 0.1.0
+schema_version: 0.2.0
 status: candidate_registry_index
 registry_shards:
   - path: prompts.yaml
     role: foundation_registry
     prompt_count: 20
   - path: prompts-2026-07-20.yaml
-    role: deliverable_entity_and_brownfield_extension
-    prompt_count: 4
+    role: 2026_07_20_extension
+    prompt_count: 5
 lookup_rule: Search every listed shard by stable ID, title, path and tags before creating a new prompt.
 canonical_effect: Registry membership does not make a prompt authoritative in another system.
