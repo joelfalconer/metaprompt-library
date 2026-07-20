@@ -1,0 +1,19 @@
+schema_version: 0.1.0
+applies_to: registry/suites.yaml
+status: authoritative_addendum_pending_controlled_consolidation
+suites:
+  - id: suite.chat-to-skill-compounding
+    title: Chat-to-SKILL.md Capability Compounding Suite
+    purpose: Preserve source context, warrant a reusable skill, review placement, promote only with owner approval, and verify the handoff.
+    sequence:
+      - mp.source.sandbox-estate
+      - mp.instruction.chat-to-skill
+      - mp.architecture.adversarial-placement
+      - mp.orchestration.selective-promotion
+      - mp.context.handoff-review
+suite_membership_additions:
+  suite.instruction-runtime:
+    insert_after: mp.instruction.architecture-research
+    prompt_id: mp.instruction.chat-to-skill
+consolidation_rule: Merge without removing existing brownfield, project-foundation, federated-system, or instruction-runtime members.
+canonical_effect: Suite membership recommends an execution sequence but grants no repository, tool, or adoption authority.
