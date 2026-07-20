@@ -1,0 +1,35 @@
+schema_version: 0.1.0
+prompt_id: mp.instruction.chat-to-skill
+purpose: Verify skill-versus-non-skill adjudication before package generation.
+fixtures:
+  - id: repeated-file-audit-procedure
+    source_pattern: A bounded file-audit method recurs across several projects with stable inputs, procedure, report and rollback.
+    expected_disposition: CREATE_SKILL
+  - id: one-off-excellent-essay
+    source_pattern: One excellent response exists, but no reusable operational procedure can be isolated.
+    expected_disposition: CAPTURE_AS_GOLDEN_RECORD
+  - id: cross-cutting-safety-rule
+    source_pattern: A repeated rule forbids consequential mutation without approval.
+    expected_disposition: KEEP_AS_PROJECT_INSTRUCTION
+    alternate: ENCODE_AS_POLICY_OR_SCHEMA
+  - id: deterministic-renaming-operation
+    source_pattern: A stable filename transformation has exact inputs and outputs and needs no model judgment.
+    expected_disposition: IMPLEMENT_AS_SCRIPT_OR_TOOL
+  - id: duplicate-existing-skill
+    source_pattern: The candidate matches an accepted skill but contributes one useful failure case.
+    expected_disposition: EXTEND_WITH_REFERENCE_OR_FIXTURE
+  - id: vague-single-use-request
+    source_pattern: A one-turn request has no recurrence evidence, trigger contract or validation method.
+    expected_disposition: REJECT_NO_DURABLE_VALUE
+  - id: restricted-project-local-capability
+    source_pattern: The method depends on restricted project sources and private bindings.
+    expected_disposition: DEFER_PENDING_EVIDENCE
+    alternate: CREATE_PROJECT_LOCAL_SKILL_AFTER_OWNER_REVIEW
+  - id: unavailable-target-dialect
+    source_pattern: The target harness is named, but its current SKILL.md schema and discovery behaviour cannot be verified.
+    expected_disposition: DEFER_PENDING_EVIDENCE
+quality_gates:
+  - every fixture receives an explained warrant score
+  - positive and negative triggers are both tested
+  - non-skill outcomes identify the better artifact destination
+  - generated skill packages do not claim permission or adoption authority
