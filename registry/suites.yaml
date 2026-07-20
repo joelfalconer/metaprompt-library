@@ -15,3 +15,6 @@ suites:
   - id: suite.instruction-runtime
     title: Instruction and Runtime Architecture Suite
     sequence: [mp.instruction.architecture-research, mp.instruction.global-agent-compiler, mp.instruction.multi-harness-adapters, mp.instruction.dotfiles-programme, mp.orchestration.cross-system-dispatch]
+  - id: suite.work-item-execution
+    title: Work Item Discovery, Execution, and Closure Suite
+    sequence: [mp.orchestration.universal-work-item-launcher, mp.context.handoff-review, mp.compounding.grounding-audit]
