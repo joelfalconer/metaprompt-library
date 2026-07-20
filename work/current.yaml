@@ -1,11 +1,24 @@
-schema_version: 0.2.0
-state: foundation_live
-release: 0.1.0
+schema_version: 0.3.0
+state: candidate_extension_ready_for_merge_and_evaluation
+release: 0.2.0-candidate
 foundation_commit: 8549dfca2ab92bff7d92326532a737ddf96edb82
-registered_prompts: 20
-current_focus: factory_validation_and_library_growth
+registered_prompts: 24
+registry_index: registry/REGISTRY_INDEX.yaml
+current_focus: deliverable_entity_brownfield_extension_and_fixture_evaluation
+completed:
+  - add project deliverable architecture selector
+  - add exhaustive deliverable taxonomy generator
+  - add brownfield conversation and legacy project formalisation prompt
+  - add entity type ontology schema and registry design prompt
+  - add registry shard and registry index
+  - extend prompt taxonomy and suites
 next:
-  - run the prompt-mining factory against an unrelated conversation
+  - merge the candidate extension after branch validation
+  - run MPL-EVAL-001 across unrelated software vault brand marketing creative and migration cases
+  - revise or promote prompts based on failure evidence
   - add Golden Record and artifact-delivery audit prompts
-  - create fixture-based prompt evaluation
   - generate exact remote-tree release checksums
+constraints:
+  - candidate prompts do not become external system authority by publication
+  - owner-specific examples and private payload remain outside this repository
+  - search every registry shard before creating another prompt
