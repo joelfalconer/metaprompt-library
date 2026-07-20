@@ -1,0 +1,25 @@
+schema_version: 0.1.0
+prompt:
+  path: prompts/context-continuity/FULL-SOURCE-CONTEXT-EXECUTION-AND-RESUMPTION.md
+  id: mp.context.full-source-execution
+  title: Full-Source Context Execution and Resumption
+  domain: context_continuity
+  type: router
+  status: candidate
+  version: 0.1.0
+  summary: >-
+    Forces complete governing-prompt retrieval, live authority and lock resolution,
+    minimum-sufficient context composition, correct system/tool routing, durable
+    documentation and project-management maintenance, validation and exact resumption.
+  tags:
+    - prompt-recovery
+    - context-composition
+    - tool-routing
+    - project-management
+    - resumption
+  source_lineage:
+    - Constellation Mission Control universal work-item launcher
+    - COS-MC-008 portfolio closure and execution launch
+    - mature-conversation and max-length-chat recovery requirements
+  evaluation_work_item: MPL-EVAL-001
+  canonical_effect: none_until_adopted
