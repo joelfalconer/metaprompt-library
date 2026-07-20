@@ -1,0 +1,47 @@
+schema_version: 0.1.0
+registry_shard: '2026-07-20-deliverable-entity-brownfield'
+prompts:
+  - id: mp.architecture.project-deliverable-selector
+    path: prompts/architecture-governance/PROJECT-DELIVERABLE-ARCHITECTURE-SELECTOR.md
+    title: Project Deliverable Architecture Selector
+    domain: architecture_governance
+    type: router
+    status: candidate
+    version: 0.1.0
+    summary: Selects the smallest coherent project-specific deliverable architecture from a broad option space.
+    tags: [deliverables, project-architecture, documentation, selection, anti-bureaucracy]
+    source_lineage: [repeated project deliverables seed prompt, Mission Control deliverable architecture]
+    canonical_effect: none_until_adopted
+  - id: mp.architecture.deliverable-taxonomy-generator
+    path: prompts/architecture-governance/EXHAUSTIVE-PROJECT-DELIVERABLE-TAXONOMY-GENERATOR.md
+    title: Exhaustive Project Deliverable Taxonomy Generator
+    domain: architecture_governance
+    type: compiler
+    status: candidate
+    version: 0.1.0
+    summary: Generates an expansive typed deliverable library, facets and project profiles for later selective use.
+    tags: [deliverables, taxonomy, project-types, option-space, registry-design]
+    source_lineage: [project deliverables seed prompt, Mission Control deliverable type library]
+    canonical_effect: none_until_adopted
+  - id: mp.context.brownfield-formalisation
+    path: prompts/context-continuity/BROWNFIELD-CONVERSATION-AND-LEGACY-PROJECT-FORMALISATION.md
+    title: Brownfield Conversation and Legacy Project Formalisation
+    domain: context_continuity
+    type: prompt_suite
+    status: candidate
+    version: 0.1.0
+    summary: Recovers and places valuable work that developed before formal project entry or exists across legacy roots.
+    tags: [brownfield, legacy, chat-to-system, migration, archaeology, placement]
+    source_lineage: [Mission Control brownfield entry architecture, chat-to-system suite]
+    canonical_effect: none_until_adopted
+  - id: mp.architecture.entity-library-registry-design
+    path: prompts/architecture-governance/ENTITY-TYPE-LIBRARY-ONTOLOGY-SCHEMA-AND-REGISTRY-DESIGN.md
+    title: Entity-Type Library, Ontology, Schema and Registry Design
+    domain: architecture_governance
+    type: crucible
+    status: candidate
+    version: 0.1.0
+    summary: Separates candidate types from instantiated identities and designs federated semantic and registry boundaries.
+    tags: [entities, ontology, taxonomy, schema, registry, anti-sprawl]
+    source_lineage: [Mission Control entity-type library, K-DOS annotation follow-up, JF-74 queue]
+    canonical_effect: none_until_adopted
