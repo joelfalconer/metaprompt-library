@@ -1,0 +1,14 @@
+schema_version: 0.2.0
+registry_shard: 2026-07-20-work-item-launchers
+prompts:
+  - id: mp.orchestration.universal-work-item-launcher
+    path: prompts/programme-orchestration/UNIVERSAL-WORK-ITEM-LAUNCHER.md
+    title: Universal Work Item Launcher
+    domain: programme_orchestration
+    type: router
+    status: candidate
+    version: 0.1.0
+    summary: Resolves a Work Item from a minimal ID, name and optional note; compiles minimum context; routes or executes conditionally; validates, persists and leaves exact resumption.
+    tags: [work-item, bootstrap, closure, context-loading, routing, execution, receipt]
+    source_lineage: [Constellation Mission Control universal Work-Item bootstrap and closure, mature-chat and portfolio-resumption programme]
+    canonical_effect: none_until_adopted
