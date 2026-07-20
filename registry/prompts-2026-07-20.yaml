@@ -1,5 +1,5 @@
-schema_version: 0.1.0
-registry_shard: '2026-07-20-deliverable-entity-brownfield'
+schema_version: 0.2.0
+registry_shard: '2026-07-20-deliverable-entity-brownfield-and-skill'
 prompts:
   - id: mp.architecture.project-deliverable-selector
     path: prompts/architecture-governance/PROJECT-DELIVERABLE-ARCHITECTURE-SELECTOR.md
@@ -44,4 +44,15 @@ prompts:
     summary: Separates candidate types from instantiated identities and designs federated semantic and registry boundaries.
     tags: [entities, ontology, taxonomy, schema, registry, anti-sprawl]
     source_lineage: [Mission Control entity-type library, K-DOS annotation follow-up, JF-74 queue]
+    canonical_effect: none_until_adopted
+  - id: mp.instruction.chat-to-skill
+    path: prompts/instruction-runtime/CHAT-TO-SKILL-SKILL-EXTRACTION-WARRANT-AND-PACKAGING.md
+    title: Chat-to-SKILL.md Skill Extraction, Warrant, and Packaging
+    domain: instruction_runtime
+    type: factory
+    status: candidate
+    version: 0.1.0
+    summary: Mines conversations and artifacts for warranted reusable skills, builds validated packages and routes non-skill value correctly.
+    tags: [chat-to-skill, skill-extraction, skill-warrant, skill-packaging, compounding]
+    source_lineage: [chat-to-system value extraction, prompt-mining factory, cross-harness instruction architecture]
     canonical_effect: none_until_adopted
