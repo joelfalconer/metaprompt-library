@@ -2,15 +2,23 @@
 
 A public library of reusable prompts for turning ambiguous, high-context work into grounded, durable, reviewable outcomes.
 
-The library focuses on prompt **systems**, not clever one-liners. Its prompts help with source custody, chat-to-system extraction, handoffs, system placement, federated taxonomy, research, instruction architecture, owner review, and compounding self-improvement.
+The library focuses on prompt **systems**, not clever one-liners. Its prompts help with source custody, chat-to-system extraction, brownfield formalisation, handoffs, system placement, deliverable architecture, entity and registry design, federated taxonomy, research, instruction architecture, owner review, and compounding self-improvement.
 
 ## Start here
 
-1. Browse [`registry/prompts.yaml`](registry/prompts.yaml).
+1. Open [`registry/REGISTRY_INDEX.yaml`](registry/REGISTRY_INDEX.yaml) and search every listed registry shard.
 2. Choose a prompt by **job**, not by title glamour.
-3. Fill the input contract and preserve candidate versus canonical status.
-4. Close consequential work with outputs, validation, unresolved questions, and exact resumption.
-5. Use the [Prompt Mining and Library Publication Factory](factory/PROMPT-MINING-AND-LIBRARY-PUBLICATION-FACTORY.md) to extract more reusable prompts from a conversation or working directory.
+3. Use the relevant suite in [`registry/suites.yaml`](registry/suites.yaml) when the task needs a sequence rather than one prompt.
+4. Fill the input contract and preserve candidate versus canonical status.
+5. Close consequential work with outputs, validation, unresolved questions, and exact resumption.
+6. Use the [Prompt Mining and Library Publication Factory](factory/PROMPT-MINING-AND-LIBRARY-PUBLICATION-FACTORY.md) to extract more reusable prompts from a conversation or working directory.
+
+## New project and legacy-work routes
+
+- Select a project-specific output set with `PROJECT-DELIVERABLE-ARCHITECTURE-SELECTOR.md`.
+- Generate or audit the broader option space with `EXHAUSTIVE-PROJECT-DELIVERABLE-TAXONOMY-GENERATOR.md`.
+- Formalise work that emerged in chat or predates the system with `BROWNFIELD-CONVERSATION-AND-LEGACY-PROJECT-FORMALISATION.md`.
+- Separate possible entity types from actual registered identities with `ENTITY-TYPE-LIBRARY-ONTOLOGY-SCHEMA-AND-REGISTRY-DESIGN.md`.
 
 ## Design law
 
